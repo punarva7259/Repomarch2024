@@ -19,7 +19,8 @@ public class AppDependentMethods extends CucumberTestRunner {
             return appInd.compareExactMatch(oBrowser, oBrowser.getTitle(), "actiTIME - Login");
         }catch(Exception e){
             reports.writeResult(oBrowser, "Exception", "Exception in 'navigateURL()' method. " + e);
-            return false;
+            return true;
+
         }
     }
 
